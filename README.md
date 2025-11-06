@@ -19,6 +19,7 @@ We discovered that too many epoches might repeat the same loss because we alread
 If we use too little and we won't even finish reaching the minimum loss.
 <br>This is the model progress after finetuning the learning rate and epoches:
 <br><img width="534" height="410" alt="image" src="https://github.com/user-attachments/assets/0a418dee-0f84-4562-b585-29060cba5703" /><br>
+Notice how the spaces between the lines (the steps between each epoch) get smaller as we get closer (the loss gets smaller) to the ideal line.
 
 ### Technologies used: <b><code>Python</code></b>, <b><code>PyTorch</code></b>, <b><code>numpy</code></b>, <b><code>matplotlib</code></b>, <b><code>sklearn</code></b>.
 <br><br>
