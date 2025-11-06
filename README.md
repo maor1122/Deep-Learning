@@ -39,10 +39,10 @@ we start of trying out different number of layers (L), or in other words differe
 <br>This is the result from the first experiment:
 <br><img width="643" height="437" alt="image" src="https://github.com/user-attachments/assets/282dac2b-815a-478a-a433-da870232520d" /><br>
 As we can see the "deeper" models performed badly, the reasons are the following:
-Deeper models try to solve more complex problems, and by that ignoring easy solutions.
+Deeper models try to solve more complex problems, and by that - ignoring easy solutions.
 In NN we call the the vanishing gradient, when adjusting the weights we work backwards and each weight depends on the change of the weights in the layer ahead of him.
-The problem is the change usually get smaller each layer and with alot of layers the weights on the first layers get almost no change hense the name the "vanishing gradient".
-There could be more problems for example the weight are initniallized randomly and could cause the changes to be too big or too small and also cause the vanishing gradient or in the case they are too big the exploding gradient - when change gets too big in the first layers, the deeper models have more layers hense more sensitive to this problem. There are solutions for these problems which is different loss function such as ReLU or initializing the weights (not randomly).
+The problem is the change can get smaller with each layer and when models have alot of layers the weights on the first layers get almost no change hense the name the "vanishing gradient".
+There could be more problems for example the weights are initniallized randomly and could cause the changes to be too big or too small and also cause the vanishing gradient or in the case they are too big the exploding gradient - when change gets too big in the first layers, the deeper models have more layers hense more sensitive to this problem. There are solutions for these problems for example different loss function such as ReLU or initializing the weights (not randomly).
 
 lastly we experimented with different filters per layer amounts, with combinations of number of layers. 
 <br>This an example of the difference in filters per layers amount with 4 layers:
