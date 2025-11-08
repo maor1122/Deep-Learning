@@ -59,3 +59,22 @@ lastly we experimented with different filters per layer amounts, with combinatio
 
 ### Technologies used: <b><code>Python</code></b>, <b><code>PyTorch</code></b>, <b><code>numpy</code></b>, <b><code>matplotlib</code></b>, <b><code>torch</code></b>, <b><code>torchvision</code></b>,<b><code>tqdm</code></b>.
 <br><br>
+
+## CIFAR-10 Deep Learning Model - Final Project
+The goal of the final project was to independently design, train, and optimize a deep learning model that achieves the best accuracy possible on the CIFAR-10 dataset.
+Unlike the previous guided assignments, here I explored and tuned different architectures, hyperparameters, and optimization strategies on my own.
+
+I built and experimented with custom CNN architectures and also tested pre-trained networks (like ResNet-50) to understand how architecture depth, normalization, and regularization affect generalization.
+<br>The experiments focused on:
+
+- Number of filters per layer and layers per block
+- Learning rate and optimizer (SGD vs Adam)
+- Batch Normalization
+- Dropout and L2 regularization
+- Hidden layer size (\[100, 100\], \[256, 256\], etc.)
+<br>
+This is an example of the testing of the learning rate and optimizer:
+<br><img width="655" height="444" alt="image" src="https://github.com/user-attachments/assets/bc44bf75-5de7-40ce-a946-eea9658906b5" /><br>
+
+We can see that Adam converges faster and more smoothly early on, but sometimes plateaus earlier than tuned SGD. <br>
+This is because Adam automatically scales the step size depending on how stable or noisy the gradients are
