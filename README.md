@@ -76,5 +76,6 @@ I built and experimented with custom CNN architectures and also tested pre-train
 This is an example of the testing of the learning rate and optimizer:
 <br><img width="655" height="444" alt="image" src="https://github.com/user-attachments/assets/bc44bf75-5de7-40ce-a946-eea9658906b5" /><br>
 
-We can see that Adam converges faster and more smoothly early on, but sometimes plateaus earlier than tuned SGD. <br>
-This is because Adam automatically scales the step size depending on how stable or noisy the gradients are
+Optimization methods target is to make the learning faster which is why we testing them with the learning rate simultaneously.<br>
+Adam works by accelarating the learning rate depending on how stable or noisy the gradients are and because of that the learning needs less epoches to finish, this makes the model learn especially faster at the beginning, this also means Adam works best with lower leaning rates. <br>
+SGD updates from every sample, instead of from all the epoch batch, which makes it faster but at a stable improvment speed.
