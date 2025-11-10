@@ -1,4 +1,4 @@
-# Deep-Learning
+# Deep Learning
 Deep learning course assignments and projects.
 I inserted in the readme only the projects I liked the most.
 
