@@ -79,3 +79,7 @@ This is an example of the testing of the learning rate and optimizer:
 Optimization methods target is to make the learning faster which is why we testing them with the learning rate simultaneously.<br>
 Adam works by accelarating the learning rate depending on how stable or noisy the gradients are and because of that the learning needs less epoches to finish, this makes the model learn especially faster at the beginning, this also means Adam works best with lower leaning rates. <br>
 SGD updates from every sample, instead of from all the epoch batch, which makes it faster but at a stable improvment speed.
+In the end the model had around 76% prediction accuracy, we tested that compared to resnet50, which is a known CNN the accels at image classification developed by microsoft which had around 83% accuracy.
+
+### Technologies used: <b><code>Python</code></b>, <b><code>PyTorch</code></b>, <b><code>numpy</code></b>, <b><code>matplotlib</code></b>, <b><code>torch</code></b>, <b><code>torchvision</code></b>,<b><code>tqdm</code></b>.
+<br><br>
